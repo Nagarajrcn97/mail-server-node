@@ -25,8 +25,8 @@ app.post('/email', async (req, res) => {
         text: 'and easy to do anywhere, even with Node.js',
         html: `<strong>${req.body}</strong>`,
       };
-    var response = await sgMail.send(msg);
-    res.send(response)
+    // var response = await sgMail.send(msg);
+    res.send("Hello")
 })
 
 app.listen(4000, function () {
